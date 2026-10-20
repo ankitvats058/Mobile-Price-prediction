@@ -1,0 +1,57 @@
+
+PROJECT REPORT
+Feature Extraction and Price Prediction for Mobile Phones
+
+1. OBJECTIVE
+The objective is to identify mobile phone features affecting price
+and develop a machine learning model for price prediction.
+
+2. DATASET
+Total usable records: 531
+Target variable: Price
+Features used: 12
+Training records: 424
+Testing records: 107
+
+3. METHODOLOGY
+- Data cleaning and duplicate removal
+- Missing value handling
+- One-hot encoding of categorical features
+- Train-test split
+- Random Forest Regression
+- Evaluation using MAE, MSE, RMSE and R-squared
+
+4. MODEL EVALUATION
+MAE: Rs. 2164.68
+MSE: 20726144.90
+RMSE: Rs. 4552.60
+R-squared: 0.8034
+
+5. TOP IMPORTANT FEATURES
+                                 Feature  Importance
+                         numeric__Memory    0.273099
+          categorical__Front Camera_12MP    0.118844
+                            numeric__RAM    0.114497
+                       numeric__Battery_    0.109981
+                  numeric__Mobile Height    0.073903
+ categorical__Model_APPLE iPhone 14 Plus    0.072266
+           categorical__Rear Camera_12MP    0.043189
+categorical__Processor__Google Tensor G2    0.021088
+           categorical__Front Camera_0MP    0.018991
+       categorical__Model_Google Pixel 7    0.018982
+
+6. RECOMMENDATIONS
+- Consider memory and RAM when planning product prices.
+- Evaluate battery, processor and camera specifications.
+- Use model predictions as guidance, not as guaranteed prices.
+- Validate predictions on new data before business use.
+- Compare multiple models before selecting the final model.
+
+7. CONCLUSION
+A Random Forest regression model was trained using the available
+mobile phone features. Its performance was evaluated using a
+separate test set. The evaluation metrics should guide further
+improvements and validation before real-world deployment.
+
+Note: Feature importance indicates predictive usefulness, not
+proof of a causal effect on mobile phone prices.
